@@ -1632,3 +1632,1044 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1298.036159 seconds.
+  path: Assets/Animations/AvatarAnimations.controller
+  artifactKey: Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AvatarAnimations.controller using Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b1291772b97f54161e6a4ca21b2307') in 0.047652 seconds 
+  Import took 0.052130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 756.630050 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-00.png
+  artifactKey: Guid(dd6d08abf4111154eac6da227dcca799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-00.png using Guid(dd6d08abf4111154eac6da227dcca799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f899250353e156b63bce4b196c8878c') in 0.076049 seconds 
+  Import took 0.080098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-02.png
+  artifactKey: Guid(fa468772a4982bd489077b46a596ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-02.png using Guid(fa468772a4982bd489077b46a596ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6033c1191808820b52fd45959fb11f5c') in 0.031003 seconds 
+  Import took 0.034565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-00.png
+  artifactKey: Guid(df4c0fc4f709b3b448c8374e70ee780f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-00.png using Guid(df4c0fc4f709b3b448c8374e70ee780f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd414557b42c0bef321fdf5443f371a33') in 0.034002 seconds 
+  Import took 0.037187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-04.png
+  artifactKey: Guid(8724ae438ba3ede43a6f4c5949f163b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-04.png using Guid(8724ae438ba3ede43a6f4c5949f163b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce892137c4223efdc70418a9e4648d4') in 0.025165 seconds 
+  Import took 0.028215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-04.png
+  artifactKey: Guid(d3e7499315a8dba4c80c1b975cccdb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-04.png using Guid(d3e7499315a8dba4c80c1b975cccdb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4781fb3c8d371c97ba3951eee3c85a44') in 0.022579 seconds 
+  Import took 0.025952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-01.png
+  artifactKey: Guid(010a1bdc259c0894c918eeae107df883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-01.png using Guid(010a1bdc259c0894c918eeae107df883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f5f07b865ae46adcefb5b51bb982b2') in 0.037804 seconds 
+  Import took 0.041089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-loop-01.png
+  artifactKey: Guid(7361c62b7002e074e82d9246016f44c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-loop-01.png using Guid(7361c62b7002e074e82d9246016f44c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a1dd8ac5fabc881247ed0729eeb45') in 0.014887 seconds 
+  Import took 0.018094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-02.png
+  artifactKey: Guid(d21d295e7c83a3a458a85bb07418abb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-02.png using Guid(d21d295e7c83a3a458a85bb07418abb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65dd74d20a12e5e3b8ee17477089e9f') in 0.011571 seconds 
+  Import took 0.014846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-01.png
+  artifactKey: Guid(0bc4d91b6b91fe3468416d2f5d7bb8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-01.png using Guid(0bc4d91b6b91fe3468416d2f5d7bb8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42fe6650b2e74e80bf0615dc60ba52b') in 0.010739 seconds 
+  Import took 0.014797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-03.png
+  artifactKey: Guid(c5ae55a2b7a98784f8ef3865cee6bb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-03.png using Guid(c5ae55a2b7a98784f8ef3865cee6bb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c52b576cdeb9cefb7583d7ccaef3db8') in 0.018660 seconds 
+  Import took 0.021855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-05.png
+  artifactKey: Guid(ff9b15d96dc9b1b4c99ffbf75414e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-05.png using Guid(ff9b15d96dc9b1b4c99ffbf75414e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b333dd44db4d1c18690132c476cb4486') in 0.014132 seconds 
+  Import took 0.017153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-03.png
+  artifactKey: Guid(97f9678f093979d45b28eb5fac2c191b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-03.png using Guid(97f9678f093979d45b28eb5fac2c191b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e7933a7eda94f2a481bf2c68ca1483') in 0.010342 seconds 
+  Import took 0.013781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-01.png
+  artifactKey: Guid(68f5efb06b0095f4e8f73bcd23335a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-01.png using Guid(68f5efb06b0095f4e8f73bcd23335a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6faab4ee2ae8f07c2a32170c17e34f8f') in 0.010304 seconds 
+  Import took 0.014018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-loop-00.png
+  artifactKey: Guid(9158982f414444448a274f0eef1d2b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-loop-00.png using Guid(9158982f414444448a274f0eef1d2b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b416fb80a1ebed25ceeb2d5afbf5e6c8') in 0.010148 seconds 
+  Import took 0.014251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-01.png
+  artifactKey: Guid(14b79efc5af2c024ea6ebe3b257b57d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack1-01.png using Guid(14b79efc5af2c024ea6ebe3b257b57d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1edc824fc081f46a0c5f18d31d3b01') in 0.010444 seconds 
+  Import took 0.014485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-03.png
+  artifactKey: Guid(a0a502ebebe09aa4abe8c3039365b4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-03.png using Guid(a0a502ebebe09aa4abe8c3039365b4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00584b26254fc32175c3f9cf23dd0c0a') in 0.010755 seconds 
+  Import took 0.014436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-01.png
+  artifactKey: Guid(d4b51f13f0e7aa64082d66b0631b4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-01.png using Guid(d4b51f13f0e7aa64082d66b0631b4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c584cf4bc0da881c2f89fcbb20ff5054') in 0.009902 seconds 
+  Import took 0.013152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-01.png
+  artifactKey: Guid(9809defd174b7d942bd067c13f8d8345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-01.png using Guid(9809defd174b7d942bd067c13f8d8345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1c07936d533de12d0df2ae8a1d0194') in 0.014693 seconds 
+  Import took 0.018055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-02.png
+  artifactKey: Guid(8b270ddf7e1769c4c9c8ee134fc9040f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-02.png using Guid(8b270ddf7e1769c4c9c8ee134fc9040f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6c690a31304c18b9ce848512dca2c6') in 0.012610 seconds 
+  Import took 0.016213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-01.png
+  artifactKey: Guid(f214f5fd4dd552a46b194026e71b7bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-01.png using Guid(f214f5fd4dd552a46b194026e71b7bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ca77bac4a75e28b8455bf83ef3fbad') in 0.009555 seconds 
+  Import took 0.013144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-05.png
+  artifactKey: Guid(c419c0b5aa8a0b846b1500513fd3cb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-05.png using Guid(c419c0b5aa8a0b846b1500513fd3cb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d3d4fde4a2ba8f5b40e020cb365724') in 0.010404 seconds 
+  Import took 0.014024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-02.png
+  artifactKey: Guid(fc42fe36340d2574d8a7d486a6e94eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-02.png using Guid(fc42fe36340d2574d8a7d486a6e94eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c08ca86fc17dde3e3e235417e2d73c3') in 0.009349 seconds 
+  Import took 0.012649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-04.png
+  artifactKey: Guid(1794c9aceee3e874e84ff061a9fa3e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-04.png using Guid(1794c9aceee3e874e84ff061a9fa3e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ad96598b4a7e4341a21f6a99ce8611') in 0.010583 seconds 
+  Import took 0.013901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-00.png
+  artifactKey: Guid(32f0a968ae91dbc4783a2a1a5da6d66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack2-00.png using Guid(32f0a968ae91dbc4783a2a1a5da6d66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f841b7f0145e1000b51f68daabc2ba4e') in 0.010779 seconds 
+  Import took 0.015508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-02.png
+  artifactKey: Guid(37665e46b2967b64ba9906e5bbcefbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-02.png using Guid(37665e46b2967b64ba9906e5bbcefbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabb9e1f38f219ca9d841d35bc32cb7c') in 0.009863 seconds 
+  Import took 0.012842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-rdy-00.png
+  artifactKey: Guid(8228d7e8971d7fb42a1c1f734b991222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack3-rdy-00.png using Guid(8228d7e8971d7fb42a1c1f734b991222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35039b013c8842dd40b08782e911f5d') in 0.010288 seconds 
+  Import took 0.013737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-00.png
+  artifactKey: Guid(e537beb3541768c40aef146b14d8f14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-00.png using Guid(e537beb3541768c40aef146b14d8f14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253002d3463e45a9f35b2faf2f28421b') in 0.010185 seconds 
+  Import took 0.013775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-00.png
+  artifactKey: Guid(a247dce9b5825154b9e41b4cdebd747c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-00.png using Guid(a247dce9b5825154b9e41b4cdebd747c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bb3668537e84b5f542b79f52380348') in 0.011046 seconds 
+  Import took 0.014309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-03.png
+  artifactKey: Guid(34aedb6631e40504ba385065670c78f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack1-03.png using Guid(34aedb6631e40504ba385065670c78f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd7e7e3f93d215921fe2f2ba0d4ce40') in 0.010409 seconds 
+  Import took 0.014252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-00.png
+  artifactKey: Guid(95a160445853c404681f702864d3a61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack2-00.png using Guid(95a160445853c404681f702864d3a61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b293931e0e8f009f7065d22fffd1bbf9') in 0.011500 seconds 
+  Import took 0.016329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-02.png
+  artifactKey: Guid(84b0576740d0b8d4083f78a21f0352c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-air-attack-3-end-02.png using Guid(84b0576740d0b8d4083f78a21f0352c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7801109d72887b73c28df0d93ab9fb') in 0.010065 seconds 
+  Import took 0.013758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-02.png
+  artifactKey: Guid(63abc73f5e2014e4ab32661002640ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-attack3-02.png using Guid(63abc73f5e2014e4ab32661002640ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '969b417bc3224114282b2f400d2c1b68') in 0.010873 seconds 
+  Import took 0.014732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-00.png
+  artifactKey: Guid(417d1a4156ac8c344814712069091827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-00.png using Guid(417d1a4156ac8c344814712069091827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ad7482b8dc603bd32141fc6e4859e1') in 0.009372 seconds 
+  Import took 0.012971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.649079 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-03.png
+  artifactKey: Guid(bf15226f7547bef42b99475c46f5ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-03.png using Guid(bf15226f7547bef42b99475c46f5ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b73b51167e814b6f775aafb88134bd5') in 0.010078 seconds 
+  Import took 0.013329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-03.png
+  artifactKey: Guid(02f1f95c81b158a48a84fdf8caa6be0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-03.png using Guid(02f1f95c81b158a48a84fdf8caa6be0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f303eda1df6a9394b932a7dd42982e') in 0.011964 seconds 
+  Import took 0.015026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-02.png
+  artifactKey: Guid(66a4ee4196766054290a752e38daba0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-02.png using Guid(66a4ee4196766054290a752e38daba0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8569146ed1dcb78ee44c55732c7d91ad') in 0.009661 seconds 
+  Import took 0.012580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-01.png
+  artifactKey: Guid(f140d44dbebffee48a6e4cf954bb1d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-01.png using Guid(f140d44dbebffee48a6e4cf954bb1d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfe9473a63805c60f31c56edcac4573') in 0.015681 seconds 
+  Import took 0.018743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-02.png
+  artifactKey: Guid(31deb221420d98c4d91baac87fda77a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-02.png using Guid(31deb221420d98c4d91baac87fda77a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f81461a17754a2abe2cbdb9db0e918') in 0.014987 seconds 
+  Import took 0.017997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-00.png
+  artifactKey: Guid(d94b307e380739d42bad6bcf06445ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-00.png using Guid(d94b307e380739d42bad6bcf06445ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ce27e90bb43f74ddda623264900c83') in 0.009480 seconds 
+  Import took 0.012795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-00.png
+  artifactKey: Guid(98ea32729475da646bc6756782504827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-00.png using Guid(98ea32729475da646bc6756782504827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ba8728be99c1d66de4d3619e95ecb7') in 0.010855 seconds 
+  Import took 0.014520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-01.png
+  artifactKey: Guid(7b6079ffb48071d4abb62ad854d8f2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-cast-loop-01.png using Guid(7b6079ffb48071d4abb62ad854d8f2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543aa422f18c5f86673dc8bc8fe88b88') in 0.010929 seconds 
+  Import took 0.014609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.375192 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-03.png
+  artifactKey: Guid(9e5ceebfafbe27d45b128fa6d24a4983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-03.png using Guid(9e5ceebfafbe27d45b128fa6d24a4983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7628b3e725b988dcedb08e6ae62f757') in 0.010686 seconds 
+  Import took 0.014157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-00.png
+  artifactKey: Guid(2230b777827c30d40b0c8d64a0dda91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-00.png using Guid(2230b777827c30d40b0c8d64a0dda91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68b295b460f345e5f1eef6517326833') in 0.009306 seconds 
+  Import took 0.012784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-jmp-01.png
+  artifactKey: Guid(a94655d48b99c3441b8cfb94940594cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-jmp-01.png using Guid(a94655d48b99c3441b8cfb94940594cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4e432c4dba58c957a9362c6003d4b1') in 0.010336 seconds 
+  Import took 0.013508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-jmp-00.png
+  artifactKey: Guid(b4f4f2e7c08b9e7498db00e4a601de02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-jmp-00.png using Guid(b4f4f2e7c08b9e7498db00e4a601de02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc645b2285a542832523f059f160474') in 0.009732 seconds 
+  Import took 0.012732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-04.png
+  artifactKey: Guid(b2c97955ffc3edb47a4a8e5e89753cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-clmb-04.png using Guid(b2c97955ffc3edb47a4a8e5e89753cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ea848a9f50d059990a99726e9f77c6') in 0.009657 seconds 
+  Import took 0.012939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-01.png
+  artifactKey: Guid(9ce95fed234d0814fb5c26d277efa3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-01.png using Guid(9ce95fed234d0814fb5c26d277efa3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31b3fb7e94f6fbcbe01bb7fab9c6d66') in 0.009700 seconds 
+  Import took 0.012659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-03.png
+  artifactKey: Guid(db532e2f2b282d64490e16dc347671ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-03.png using Guid(db532e2f2b282d64490e16dc347671ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656e0b78aa82326c64c793cbacdaff6c') in 0.010422 seconds 
+  Import took 0.013577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-02.png
+  artifactKey: Guid(bee05ddb1e69a834d8b5a1ada2f4e115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crnr-grb-02.png using Guid(bee05ddb1e69a834d8b5a1ada2f4e115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9f2798ce0b592f7942eb2203de8c5e') in 0.009956 seconds 
+  Import took 0.013425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.666273 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-00.png
+  artifactKey: Guid(6f9410b90ad77c248954b23ba919e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-00.png using Guid(6f9410b90ad77c248954b23ba919e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1615153dbdefea9b5f454f2fda559696') in 0.010537 seconds 
+  Import took 0.014208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-03.png
+  artifactKey: Guid(e3a875b8a39ce864faf751d60c77f224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-03.png using Guid(e3a875b8a39ce864faf751d60c77f224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd85104c68c09d7fb8bd88f741f0ceb') in 0.038229 seconds 
+  Import took 0.041322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-01.png
+  artifactKey: Guid(2d4458a5811e2794f9f3c47059498452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-01.png using Guid(2d4458a5811e2794f9f3c47059498452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc557610c3b676ef5236edcd6035d1bb') in 0.009272 seconds 
+  Import took 0.012258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-02.png
+  artifactKey: Guid(872122b31f32c0f43944ec09d393d254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-crouch-02.png using Guid(872122b31f32c0f43944ec09d393d254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52e121380757302dc86610fb122b898') in 0.009848 seconds 
+  Import took 0.013119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.676054 seconds.
+  path: Assets/Animations/AvatarAnimations.controller
+  artifactKey: Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AvatarAnimations.controller using Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf78f5e641ea482518a546a78075a6aa') in 0.006606 seconds 
+  Import took 0.010389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.551598 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-00.png
+  artifactKey: Guid(4299979a34f9e4243965364adb301444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-00.png using Guid(4299979a34f9e4243965364adb301444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a263deb499fb77cf0d65f8d57d499364') in 0.011246 seconds 
+  Import took 0.014855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-02.png
+  artifactKey: Guid(753a27307e6172741b77b3c012805834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-02.png using Guid(753a27307e6172741b77b3c012805834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7821364be48ad59cfdd06fc3eb6bd560') in 0.021360 seconds 
+  Import took 0.024640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-01.png
+  artifactKey: Guid(ccd5206831a73a74b873e95a506ecd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-01.png using Guid(ccd5206831a73a74b873e95a506ecd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed406589dc23c7d05653c9620c4306c2') in 0.017295 seconds 
+  Import took 0.020339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-06.png
+  artifactKey: Guid(27b5ff34f7e96eb4c891b37a7365672b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-06.png using Guid(27b5ff34f7e96eb4c891b37a7365672b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db73c6e71033957bc174a66ac095b1d') in 0.011149 seconds 
+  Import took 0.014272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-fall-00.png
+  artifactKey: Guid(e399cbc7e1643014c99875b943009fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-fall-00.png using Guid(e399cbc7e1643014c99875b943009fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641072ff47b57927d8afc175cf151c2a') in 0.019097 seconds 
+  Import took 0.022438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-00.png
+  artifactKey: Guid(822c77caede904d4d92acccbd9541a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-00.png using Guid(822c77caede904d4d92acccbd9541a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accef8390ac076c18ca9bdd8253d714d') in 0.014012 seconds 
+  Import took 0.017044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-04.png
+  artifactKey: Guid(a915f08060f40634fa91e7ae086a395f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-04.png using Guid(a915f08060f40634fa91e7ae086a395f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31885c95eacd2170d89c302f0827290e') in 0.012525 seconds 
+  Import took 0.015976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-05.png
+  artifactKey: Guid(2dd48c083768e9c40a9ef387f6c25dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-05.png using Guid(2dd48c083768e9c40a9ef387f6c25dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2d9e79c336c3792b8b669f9e0f677a') in 0.015784 seconds 
+  Import took 0.019380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-00.png
+  artifactKey: Guid(785afe7f811f89d40b015ef478e3d538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-00.png using Guid(785afe7f811f89d40b015ef478e3d538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf337a6945d5884342dd9ff6846ac3e1') in 0.012756 seconds 
+  Import took 0.016425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-01.png
+  artifactKey: Guid(7b41120f096309f4d928df206dbb1e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-01.png using Guid(7b41120f096309f4d928df206dbb1e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612933ecd1568f0db09879b7303e9013') in 0.016667 seconds 
+  Import took 0.019645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-01.png
+  artifactKey: Guid(1ad60f24ee44f084195e7bc6a225d5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-01.png using Guid(1ad60f24ee44f084195e7bc6a225d5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f654f8c7d8ac95c37a3181c3877f07b') in 0.010337 seconds 
+  Import took 0.013444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-02.png
+  artifactKey: Guid(0f2ad9c4f4a17f44591fee573da762cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-02.png using Guid(0f2ad9c4f4a17f44591fee573da762cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6209618ed6be0d5a384774609a3027c3') in 0.014935 seconds 
+  Import took 0.018139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-02.png
+  artifactKey: Guid(2115487821604dc4e9e295b7150d93cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-02.png using Guid(2115487821604dc4e9e295b7150d93cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060a7a1784b3dbdcf6ddb4ff383ab8c1') in 0.012900 seconds 
+  Import took 0.016370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-00.png
+  artifactKey: Guid(b752597eeb1db214da1e2d9e0cb5a18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-00.png using Guid(b752597eeb1db214da1e2d9e0cb5a18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa430f58f391f4c11d51250965aead2') in 0.016636 seconds 
+  Import took 0.020003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-03.png
+  artifactKey: Guid(88fbfb53f19dbc9469e28dd66c926308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-2-03.png using Guid(88fbfb53f19dbc9469e28dd66c926308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbe1abd4f9e7537215f786c8d85549d') in 0.015849 seconds 
+  Import took 0.018787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-03.png
+  artifactKey: Guid(93bc660be90437545b7dc1b917ad193f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-die-03.png using Guid(93bc660be90437545b7dc1b917ad193f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5e6843a156a5faad20e51a274508cd') in 0.017327 seconds 
+  Import took 0.020389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-fall-01.png
+  artifactKey: Guid(180d28b6354c6b748831675c8d608539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-fall-01.png using Guid(180d28b6354c6b748831675c8d608539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f833cc46ff19c5b48faea3ba8e5d289c') in 0.015552 seconds 
+  Import took 0.018568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-01.png
+  artifactKey: Guid(43cd274caaaff864fa1208738501d029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hurt-01.png using Guid(43cd274caaaff864fa1208738501d029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8f9de197bc1f58bc49b6767c952948') in 0.013595 seconds 
+  Import took 0.017021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.442010 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-02.png
+  artifactKey: Guid(90148752b7e0b9449829d7308b7bfd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-02.png using Guid(90148752b7e0b9449829d7308b7bfd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9656dbfedc7f21a94a465f1881becade') in 0.010401 seconds 
+  Import took 0.013903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-03.png
+  artifactKey: Guid(bf647ed6e035eff478881b091b8ebc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-idle-03.png using Guid(bf647ed6e035eff478881b091b8ebc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae0be91624b7d46458a31ae8fd1b20f') in 0.016935 seconds 
+  Import took 0.019966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-00.png
+  artifactKey: Guid(6f889adfb1b71a9488e8b9375d29a473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-00.png using Guid(6f889adfb1b71a9488e8b9375d29a473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b47d8805737f2a18f56835273f2e47') in 0.018794 seconds 
+  Import took 0.021926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-01.png
+  artifactKey: Guid(08b22cf542eef8e4394ac37d6b19c5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-01.png using Guid(08b22cf542eef8e4394ac37d6b19c5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8370841dd539dc46f9aba849f6a41525') in 0.014744 seconds 
+  Import took 0.018035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-03.png
+  artifactKey: Guid(48bf04654478cb34da3cc0fa62c68ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-03.png using Guid(48bf04654478cb34da3cc0fa62c68ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e703e5f93a6a2c3f7d70415f7205358b') in 0.013592 seconds 
+  Import took 0.017032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-02.png
+  artifactKey: Guid(84b4909dc0dcffd4a903ceee12fb0250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-items-02.png using Guid(84b4909dc0dcffd4a903ceee12fb0250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72859c2154cacc4ab67ea6f28bdc578') in 0.014958 seconds 
+  Import took 0.018168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-02.png
+  artifactKey: Guid(ac9955051049efd428a6a27898998ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-02.png using Guid(ac9955051049efd428a6a27898998ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8826c1f81a1354c86e36af74663a6ae5') in 0.015497 seconds 
+  Import took 0.018517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-00.png
+  artifactKey: Guid(7669b75b511fc1746b3a20f4c91324b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-00.png using Guid(7669b75b511fc1746b3a20f4c91324b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e021b517f67e5f6c8cc3a5948d17da0') in 0.015141 seconds 
+  Import took 0.018011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-01.png
+  artifactKey: Guid(7d12f1cd2e61ec34fa57e4e6289fcd4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-jump-01.png using Guid(7d12f1cd2e61ec34fa57e4e6289fcd4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd34f6575362b5ec7d8f9c4e276df565') in 0.015972 seconds 
+  Import took 0.019014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.549597 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-00.png
+  artifactKey: Guid(56404a539b4d6fb478a4dfdef0d1f1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-00.png using Guid(56404a539b4d6fb478a4dfdef0d1f1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83ac748193770ddc5a4911bf558e811') in 0.016987 seconds 
+  Import took 0.020472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-03.png
+  artifactKey: Guid(26b08ba4fb7a4934dbf7b61a1dedc80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-03.png using Guid(26b08ba4fb7a4934dbf7b61a1dedc80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89b939b3780722a087da567745aae35') in 0.013620 seconds 
+  Import took 0.016978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-01.png
+  artifactKey: Guid(0772dcb63ef1923459617ef158fdb31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-01.png using Guid(0772dcb63ef1923459617ef158fdb31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6265456af93716b03a0f148a96db48d3') in 0.010549 seconds 
+  Import took 0.013554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-02.png
+  artifactKey: Guid(dd856a56ab81c5d4fbd660fe2cfc3a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-ladder-climb-02.png using Guid(dd856a56ab81c5d4fbd660fe2cfc3a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c6fa7f44fc892f702d685d94983a87') in 0.010497 seconds 
+  Import took 0.013661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.190204 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-00.png
+  artifactKey: Guid(7e93abc870b55f44abdbdaa44d9d74f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-00.png using Guid(7e93abc870b55f44abdbdaa44d9d74f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4fb5826488299e17a59e427a96fe0b') in 0.011864 seconds 
+  Import took 0.015663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-03.png
+  artifactKey: Guid(758bf33395f3eab42bf1986aa47b18fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-03.png using Guid(758bf33395f3eab42bf1986aa47b18fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b0d7f28c3f024662b531d07238c37a') in 0.014781 seconds 
+  Import took 0.018083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-02.png
+  artifactKey: Guid(621e391a9255d2a4993fde0dfb8e372a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-02.png using Guid(621e391a9255d2a4993fde0dfb8e372a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fbd21ce0b12b05e7bd7d6ba51397d3') in 0.012531 seconds 
+  Import took 0.015711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-01.png
+  artifactKey: Guid(9a9dc12b56cedb0408ac8b2878ec187f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-01.png using Guid(9a9dc12b56cedb0408ac8b2878ec187f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c425c59b6f813cae49b01148a7d3e90e') in 0.014226 seconds 
+  Import took 0.017430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-04.png
+  artifactKey: Guid(3b8dd83731e5fe742811c0229b936f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-04.png using Guid(3b8dd83731e5fe742811c0229b936f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b475da4e4c666235892f0875b92a50') in 0.010692 seconds 
+  Import took 0.014084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-05.png
+  artifactKey: Guid(bf47edc8d5c1e8d4b8dbbdb9c99a8198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-run-05.png using Guid(bf47edc8d5c1e8d4b8dbbdb9c99a8198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbcff7ab1356f6b9e8f4bb73581e31d') in 0.013647 seconds 
+  Import took 0.017199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 666.970680 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-slide-00.png
+  artifactKey: Guid(75dfc71ef1e809f489b45e676207f929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-slide-00.png using Guid(75dfc71ef1e809f489b45e676207f929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92dd476e8faf92565daa252f25413abb') in 0.021537 seconds 
+  Import took 0.025807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-01.png
+  artifactKey: Guid(004a0cb6270bbc7418c9543b91f4c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-01.png using Guid(004a0cb6270bbc7418c9543b91f4c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21b8b24119b921b89a78272aa81935c') in 0.015858 seconds 
+  Import took 0.019516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-02.png
+  artifactKey: Guid(dcde1e4640f7fda4d9c1d0392c78f370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-02.png using Guid(dcde1e4640f7fda4d9c1d0392c78f370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd07a1cab56cc8629c97810e42dc106') in 0.013783 seconds 
+  Import took 0.017041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-03.png
+  artifactKey: Guid(23b3e39630ab28c44876be6275286140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-03.png using Guid(23b3e39630ab28c44876be6275286140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140c29155b4e90af49afbe376954915f') in 0.015133 seconds 
+  Import took 0.018482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-slide-01.png
+  artifactKey: Guid(76a41f0ee68b7e645b8a715fa711ea18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-slide-01.png using Guid(76a41f0ee68b7e645b8a715fa711ea18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e460947aa670f65e2f15aa7eb475132') in 0.016761 seconds 
+  Import took 0.020080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-02.png
+  artifactKey: Guid(740b8cfc44d0cb545af461a85d4adb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-02.png using Guid(740b8cfc44d0cb545af461a85d4adb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398c6857c6cfbc8820e160adf44e6b14') in 0.012070 seconds 
+  Import took 0.015390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-00.png
+  artifactKey: Guid(85121f0c631c4fe4e893fdda2961c680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-00.png using Guid(85121f0c631c4fe4e893fdda2961c680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc7d589609b7c6e0a95580197fec70d') in 0.013149 seconds 
+  Import took 0.017161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-00.png
+  artifactKey: Guid(9fb709ef138b8af43ae8842ff91c9844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-00.png using Guid(9fb709ef138b8af43ae8842ff91c9844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6fc0c603bb16b80f9ba5a0a1f0caa4') in 0.014068 seconds 
+  Import took 0.017438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-00.png
+  artifactKey: Guid(e072060c93defb241bbf561128862712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-00.png using Guid(e072060c93defb241bbf561128862712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb064089e369545962638b1edef2b131') in 0.012472 seconds 
+  Import took 0.015767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-01.png
+  artifactKey: Guid(76fb9d99906d3184eaf1da7ce568318d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-shte-01.png using Guid(76fb9d99906d3184eaf1da7ce568318d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce983f9700fcec3c956f9b729ac7b7e') in 0.010903 seconds 
+  Import took 0.014194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-wall-slide-00.png
+  artifactKey: Guid(823cdd8889acc0644b27b299cd19ef18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-wall-slide-00.png using Guid(823cdd8889acc0644b27b299cd19ef18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dfbeb9a2450b64b7fc10bd0ac79e5d8') in 0.013497 seconds 
+  Import took 0.016656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-02.png
+  artifactKey: Guid(207646156471144499277d91df713e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-02.png using Guid(207646156471144499277d91df713e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b0fc76e4bfa77fe3077730d35c7a2d') in 0.012643 seconds 
+  Import took 0.015854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-03.png
+  artifactKey: Guid(76ebe4f841c29bb41a83f88481542020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-03.png using Guid(76ebe4f841c29bb41a83f88481542020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17ace2eac7d02b4eba4889aef2179c3') in 0.012174 seconds 
+  Import took 0.015605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-01.png
+  artifactKey: Guid(53e947d39d75d8b409074ca1c517ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-stand-01.png using Guid(53e947d39d75d8b409074ca1c517ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2f43ff550e7616fa43c2b06d463ed5') in 0.011362 seconds 
+  Import took 0.014566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-02.png
+  artifactKey: Guid(855c4babbcda42d498f289a81b082c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-02.png using Guid(855c4babbcda42d498f289a81b082c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010bbcee992ff0cb1f934d4c01aab5b2') in 0.016084 seconds 
+  Import took 0.019678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-01.png
+  artifactKey: Guid(07d57dfc11bd5ae4bb50dc306fcb8e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-01.png using Guid(07d57dfc11bd5ae4bb50dc306fcb8e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5432a99d9679d974b7e269103d82e45') in 0.014238 seconds 
+  Import took 0.017586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-00.png
+  artifactKey: Guid(bef735de625a74447a7bdc4d670b487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-swrd-drw-00.png using Guid(bef735de625a74447a7bdc4d670b487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3eff8fbe8e155525ee339fa1944f53') in 0.012330 seconds 
+  Import took 0.015915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-03.png
+  artifactKey: Guid(1b8fff37ff601254f9882fd384f74564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-smrslt-03.png using Guid(1b8fff37ff601254f9882fd384f74564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930f4a207a2b3758e84c7d943f58379e') in 0.011727 seconds 
+  Import took 0.015240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-wall-slide-01.png
+  artifactKey: Guid(b482c5ca220fb86448b2542f79a18559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-wall-slide-01.png using Guid(b482c5ca220fb86448b2542f79a18559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5ac0c0d01b5a8b9437435bdb340536') in 0.010441 seconds 
+  Import took 0.013514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.669750 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png
+  artifactKey: Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png using Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9a5adc50e9b1962ac1db853c13090d') in 0.024735 seconds 
+  Import took 0.028726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.856017 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1d60a290b8efed463a92f253a40345') in 0.013660 seconds 
+  Import took 0.017735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.052722 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b02b9efab3a7ff569667de2668251a') in 0.010693 seconds 
+  Import took 0.014448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.720755 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3a011e8ba7a0c77dae8af202fad74f') in 0.208471 seconds 
+  Import took 0.212766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.493364 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png
+  artifactKey: Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png using Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef7493ff701004c9388e57750c68ea3') in 0.010921 seconds 
+  Import took 0.014543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.427421 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png
+  artifactKey: Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png using Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8c0e1901af1a38e7d74b23c1dcedda') in 0.301746 seconds 
+  Import took 0.305844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.031965 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png
+  artifactKey: Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png using Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36ceb30d72c57209d76671b5045ecf7') in 0.256618 seconds 
+  Import took 0.260545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 587.507444 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png
+  artifactKey: Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-v1.5-Sheet.png using Guid(5c3f1b4d77ed4ca4097036a7848c41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b5b6ffa40d39e511714f0b01e3bfc8') in 0.218052 seconds 
+  Import took 0.223167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 430.676366 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953f0af062b6f0d68f8af0b1bb8fbe09') in 0.224208 seconds 
+  Import took 0.228500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.739487 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260ee6fe12af10e7cc2677aeb8f5e74d') in 0.236933 seconds 
+  Import took 0.240852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.699725 seconds.
+  path: Assets/Animations/Idle.anim
+  artifactKey: Guid(d99ec32fb81ab3b4ab2d0d759fe44a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Idle.anim using Guid(d99ec32fb81ab3b4ab2d0d759fe44a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c33f1b2be585f43d66d75c50c46fd26') in 0.006841 seconds 
+  Import took 0.010470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1399.884314 seconds.
+  path: Assets/Animations/AvatarAnimations.controller
+  artifactKey: Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AvatarAnimations.controller using Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7dc960e071180fd2064801cc90c8f7') in 0.005195 seconds 
+  Import took 0.009403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 470.643223 seconds.
+  path: Assets/Animations/Player Punch 1.anim
+  artifactKey: Guid(031c49999f8cc0b41a9c6707d73873a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player Punch 1.anim using Guid(031c49999f8cc0b41a9c6707d73873a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2972b97a34c7fcaed1019e81ab6f44') in 0.003846 seconds 
+  Import took 0.007631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.081123 seconds.
+  path: Assets/Animations/AvatarAnimations.controller
+  artifactKey: Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AvatarAnimations.controller using Guid(72a6767b939577a4eae5e5940fa5837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d90de422620787c0e3491183829540') in 0.004425 seconds 
+  Import took 0.013238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.554683 seconds.
+  path: Assets/Animations/Player Idle.anim
+  artifactKey: Guid(17c8defe36abd774b83953a05d3d0628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player Idle.anim using Guid(17c8defe36abd774b83953a05d3d0628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eff76a31d6fbaa882202f2b4b20cb3b') in 0.004027 seconds 
+  Import took 0.007463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.772919 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cab8b17e49856497ea2e311a24f913') in 0.232753 seconds 
+  Import took 0.238323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.102805 seconds.
+  path: Assets/Animations/Player Hurt.anim
+  artifactKey: Guid(63969d1ff0e403d468433aa4370a6136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player Hurt.anim using Guid(63969d1ff0e403d468433aa4370a6136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3110b2d23abd2abe6976b85c9738a564') in 0.003733 seconds 
+  Import took 0.007573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.358202 seconds.
+  path: Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png
+  artifactKey: Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Adventurer Placeholder Sprites/adventurer-hand-combat-Sheet.png using Guid(2b5f7fc4dba03dd4b934e90b086b1a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2bfc5075935e438585010a1f80fd72') in 0.225252 seconds 
+  Import took 0.229337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.737420 seconds.
+  path: Assets/Animations/Player Recover.anim
+  artifactKey: Guid(e7440bd2d88cf3b4e96652056238a54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player Recover.anim using Guid(e7440bd2d88cf3b4e96652056238a54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afe1d9eb82cad7821ac1c2fc11fec4a') in 0.008935 seconds 
+  Import took 0.012585 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

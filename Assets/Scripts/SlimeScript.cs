@@ -10,6 +10,8 @@ public class SlimeScript : MonoBehaviour
 
     Adjective adjective;
 
+    public GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,7 @@ public class SlimeScript : MonoBehaviour
 
     void Strong()
     {
-
+        while
     }
 
     void Angry()

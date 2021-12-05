@@ -137,9 +137,9 @@ GameObject:
   - component: {fileID: 282897003}
   - component: {fileID: 282897004}
   - component: {fileID: 282897005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,12 +221,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1629f350f3d933b4b8514c11cfdff924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 0
+  hitPoints: 100
   superMeter: 0
   attack: 0
   defense: 0
   speed: 0
   isGrounded: 1
+  hitBox: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &282897003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497,7 +502,7 @@ GameObject:
   - component: {fileID: 569383744}
   - component: {fileID: 569383743}
   - component: {fileID: 569383746}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,6 +525,7 @@ MonoBehaviour:
   attack: 0
   defense: 0
   hitPoints: 0
+  Player: {fileID: 282896999}
 --- !u!212 &569383744
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -12,9 +12,13 @@ public class SlimeScript : MonoBehaviour
 
     public GameObject Player;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
+       
+
         switch (adjective)
         {
             case Adjective.Strong:
@@ -52,7 +56,12 @@ public class SlimeScript : MonoBehaviour
 
     void Strong()
     {
-        while
+        
+        do
+        {
+
+        } while (Player.GetComponent<AvatarController>().hitPoints >= 0);
+        
     }
 
     void Angry()

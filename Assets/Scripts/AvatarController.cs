@@ -7,6 +7,7 @@ public class AvatarController : MonoBehaviour
     public int hitPoints;
     public int superMeter;
     public int attack, defense, speed;
+    Rigidbody2D rb2D;
     public bool isGrounded = true;
 
     public Transform hitBox;
@@ -17,7 +18,7 @@ public class AvatarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class AvatarController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-
+            transform.position += transform.right * Time.deltaTime * speed;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))

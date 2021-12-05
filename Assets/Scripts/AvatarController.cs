@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AvatarController : MonoBehaviour
 {
-    public int hitPoints;
+    public int hitPoints, maxHitPoints;
     public int superMeter;
     public int attack, defense, speed;
     Rigidbody2D rb2D;
@@ -12,6 +12,7 @@ public class AvatarController : MonoBehaviour
 
     public Transform hitBox;
     public float attackRange = .5f;
+    public Animator animator;
 
     public LayerMask enemyLayers;
 
@@ -19,27 +20,28 @@ public class AvatarController : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             transform.position += transform.right * Time.deltaTime * speed;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position -= transform.right * Time.deltaTime * speed;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             isGrounded = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             
         }
@@ -52,11 +54,34 @@ public class AvatarController : MonoBehaviour
 
     void Attack()
     {
+        animator.SetTrigger("Punch1");
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).4);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+
+            animator.SetTrigger("Punch2");
+
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).6);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if(hitBox == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(hitBox.position, attackRange);
     }
 }

@@ -6,18 +6,45 @@ public class SlimeScript : MonoBehaviour
 {
     public int health;
     public int attack, defense, hitPoints;
+    public int timeOfAttack;
+    public int attackLength;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
 
-    Adjective adjective;
+    public enum Decide { Idle, Attack, ContinueAttack, BulkUp, RunAway, Sleep, Rage}
+
+    public Decide currentState;
+
+    int rollAdjective;
+    public Adjective adjective;
 
     public GameObject Player;
-
+    public Animator animator;
     
 
     // Start is called before the first frame update
     void Start()
     {
-       
+
+        rollAdjective = Random.Range(1, 4);
+
+        if (rollAdjective == 1)
+        {
+            adjective = Adjective.Strong;
+        }
+        else if (rollAdjective == 2)
+        {
+            adjective = Adjective.Angry;
+        }
+        else if (rollAdjective == 3)
+        {
+            adjective = Adjective.Meek;
+        }
+        else if (rollAdjective == 4)
+        {
+            adjective = Adjective.Relaxed;
+        }
+
+        animator = GetComponent<Animator>();
 
         switch (adjective)
         {
@@ -25,25 +52,21 @@ public class SlimeScript : MonoBehaviour
                 attack += 5;
                 defense += 5;
                 hitPoints += 20;
-                Strong();
                 break;
 
             case Adjective.Angry:
                 attack += 10;
                 defense -= 5;
-                Angry();
                 break;
 
             case Adjective.Meek:
                 attack -= 5;
                 defense -= 10;
                 hitPoints -= 20;
-                Meek();
                 break;
 
             case Adjective.Relaxed:
                 hitPoints -= 20;
-                Relaxed();
                 break;
         }
     }
@@ -52,37 +75,170 @@ public class SlimeScript : MonoBehaviour
     void Update()
     {
         
-    }
-
-    void Strong()
-    {
-        
-        do
+        switch (adjective)
         {
+            case Adjective.Strong:
+            {
+                Strong();
+                break;
+            }
 
-        } while (Player.GetComponent<AvatarController>().hitPoints >= 0);
-        
-    }
+            case Adjective.Angry:
+            {
+                Angry();
+                break;
+            }
 
-    void Angry()
-    {
+            case Adjective.Meek:
+            {
+                Meek();
+                break;
+            }
 
-    }
-
-    void Meek()
-    {
-
-    }
-
-    void Relaxed()
-    {
-
+            case Adjective.Relaxed:
+            {
+                Relaxed();
+                break;
+            }
+        }
     }
 
     void Attack()
     {
+        animator.SetTrigger("Attack");
 
+        timeOfAttack = (int)Time.time + attackLength;
+        currentState = Decide.ContinueAttack;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        hitPoints -= (damage - defense);
+
+       if(hitPoints <= 0)
+        {
+            Die();
+        }
     }
 
 
+    void Strong()
+    {
+        switch (currentState)
+        {
+            case Decide.Idle:
+                {
+                    break;
+                }
+
+            case Decide.Attack:
+                {
+                    break;
+                }
+
+            case Decide.ContinueAttack:
+                {
+                    break;
+                }
+
+            case Decide.BulkUp:
+                {
+                    break;
+                }
+        }
+    }
+
+    void Angry()
+    {
+        switch (currentState)
+        {
+            case Decide.Idle:
+                {
+                    break;
+                }
+
+            case Decide.Attack:
+                {
+                    break;
+                }
+
+            case Decide.ContinueAttack:
+                {
+                    break;
+                }
+
+            case Decide.Rage:
+                {
+                    break;
+                }
+        }
+    }
+
+    void Meek()
+    {
+        switch (currentState)
+        {
+            case Decide.Idle:
+                {
+                    break;
+                }
+
+            case Decide.Attack:
+                {
+                    break;
+                }
+
+            case Decide.ContinueAttack:
+                {
+                    break;
+                }
+
+            case Decide.RunAway:
+                {
+                    break;
+                }
+        }
+    }
+
+    void Relaxed()
+    {
+        switch (currentState)
+        {
+            case Decide.Idle:
+                {
+                    break;
+                }
+
+            case Decide.Attack:
+                {
+                    break;
+                }
+
+            case Decide.ContinueAttack:
+                {
+                    break;
+                }
+
+            case Decide.Sleep:
+                {
+                    break;
+                }
+        }
+
+
+
+        if (Time.time < timeOfAttack)
+        {
+
+        }
+        else
+        {
+            currentState = Decide.Idle;
+        }
+    }
+
+    void Die()
+    {
+        animator.SetBool("Dead", true);
+    }
 }

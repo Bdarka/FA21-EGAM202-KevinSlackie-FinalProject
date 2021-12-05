@@ -8,17 +8,35 @@ public class AdjectiveSystem : MonoBehaviour
     public GameObject SlimeSpawn;
     public int attack, defense, hitPoints;
     public enum Adjective {Strong, Angry, Meek, Relaxed}
-
+    int rollAdjective;
     Adjective adjective;
 
     // Start is called before the first frame update
     void Start()
     {
-        hitPoints = 100;
-        attack = 10;
-        defense = 10;
 
-        // randomly select adjective, set it in slime script to use different attack patterns 
+        rollAdjective = Random.Range(1, 4);
+
+        if(rollAdjective == 1)
+        {
+            adjective = Adjective.Strong;
+        }
+        else if (rollAdjective == 2)
+        {
+            adjective = Adjective.Angry;
+        }
+        else if (rollAdjective == 3)
+        {
+            adjective = Adjective.Meek;
+        }
+        else if (rollAdjective == 4)
+        {
+            adjective = Adjective.Relaxed;
+        }
+
+
+        /*
+
 
         switch (adjective)
         {
@@ -46,6 +64,7 @@ public class AdjectiveSystem : MonoBehaviour
 
 
         Instantiate(Slime, SlimeSpawn.transform.position, Quaternion.identity);
+        */
     }
 
 }

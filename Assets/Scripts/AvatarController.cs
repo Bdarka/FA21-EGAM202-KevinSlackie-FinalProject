@@ -31,7 +31,7 @@ public class AvatarController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-
+            transform.position -= transform.right * Time.deltaTime * speed;
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))

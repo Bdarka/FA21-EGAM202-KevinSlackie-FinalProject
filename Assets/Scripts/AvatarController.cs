@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class AvatarController : MonoBehaviour
 {
-    public int hitPoints, maxHitPoints;
+    public int hitPoints;
+    public int maxHitPoints = 100;
+    public HealthBarScript healthBar;
+    
     public int superMeter;
     public int attack, defense, speed;
+    
+    
     Rigidbody2D rb2D;
     public bool isGrounded = true;
 
@@ -25,6 +30,9 @@ public class AvatarController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        hitPoints = maxHitPoints;
+        healthBar.SetMaxHealth(maxHitPoints);
     }
 
     // Update is called once per frame
@@ -85,6 +93,13 @@ public class AvatarController : MonoBehaviour
             nextAttackTime = Time.time + (2f / attackRate);
         }
     }
+
+    public void PlayerDamaged(int damage)
+    {
+        hitPoints -= (damage - defense);
+        healthBar.SetHealth(hitPoints);
+    }
+
 
     private void OnDrawGizmosSelected()
     {

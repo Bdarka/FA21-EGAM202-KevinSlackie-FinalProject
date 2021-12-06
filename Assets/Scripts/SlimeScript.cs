@@ -5,6 +5,8 @@ using UnityEngine;
 public class SlimeScript : MonoBehaviour
 {
     public int maxhealth = 100;
+    public HealthBarScript healthBar;
+
     public int attack, defense, hitPoints, speed;
     public int timeOfAttack;
     public int attackLength;
@@ -28,12 +30,12 @@ public class SlimeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-
-
         hitPoints = maxhealth;
+        healthBar.SetMaxHealth(maxhealth);
+
         attack = 10;
         defense = 10;
+        rb2d = GetComponent<Rigidbody2D>();
 
 
         rollAdjective = Random.Range(1, 4);
@@ -130,6 +132,7 @@ public class SlimeScript : MonoBehaviour
     {
         animator.SetTrigger("Hit");
         hitPoints -= (damage - defense);
+        healthBar.SetHealth(hitPoints);
 
        if(hitPoints <= 0)
         {

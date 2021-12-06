@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SlimeScript : MonoBehaviour
 {
-    public int health;
-    public int attack, defense, hitPoints;
+    public int maxhealth = 100;
+    public int attack, defense, hitPoints, speed;
     public int timeOfAttack;
     public int attackLength;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
@@ -18,12 +18,23 @@ public class SlimeScript : MonoBehaviour
     public Adjective adjective;
 
     public GameObject Player;
+    public Transform playerPosition;
+    public float aggroRange;
+
+    Rigidbody2D rb2d;
     public Animator animator;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        rb2d = GetComponent<Rigidbody2D>();
+
+
+        hitPoints = maxhealth;
+        attack = 10;
+        defense = 10;
+
 
         rollAdjective = Random.Range(1, 4);
 
@@ -74,6 +85,10 @@ public class SlimeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //distance from player 
+        float distToPlayer = Vector2.Distance(transform.position, playerPosition.position);
+        
         
         switch (adjective)
         {
@@ -113,12 +128,21 @@ public class SlimeScript : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        animator.SetTrigger("Hit");
         hitPoints -= (damage - defense);
 
        if(hitPoints <= 0)
         {
             Die();
         }
+    }
+
+    void Die()
+    {
+        animator.SetBool("Dead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 
 
@@ -133,11 +157,13 @@ public class SlimeScript : MonoBehaviour
 
             case Decide.Attack:
                 {
+                    Attack();
                     break;
                 }
 
             case Decide.ContinueAttack:
                 {
+                    Attack();
                     break;
                 }
 
@@ -159,6 +185,7 @@ public class SlimeScript : MonoBehaviour
 
             case Decide.Attack:
                 {
+                    Attack();
                     break;
                 }
 
@@ -185,6 +212,7 @@ public class SlimeScript : MonoBehaviour
 
             case Decide.Attack:
                 {
+                    Attack();
                     break;
                 }
 
@@ -211,6 +239,7 @@ public class SlimeScript : MonoBehaviour
 
             case Decide.Attack:
                 {
+                    Attack();
                     break;
                 }
 
@@ -235,10 +264,5 @@ public class SlimeScript : MonoBehaviour
         {
             currentState = Decide.Idle;
         }
-    }
-
-    void Die()
-    {
-        animator.SetBool("Dead", true);
     }
 }

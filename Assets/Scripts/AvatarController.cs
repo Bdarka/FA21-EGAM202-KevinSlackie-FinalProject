@@ -12,6 +12,10 @@ public class AvatarController : MonoBehaviour
 
     public Transform hitBox;
     public float attackRange = .5f;
+
+    public float attackRate = 2f;
+    float nextAttackTime = 0f;
+
     public Animator animator;
 
     public LayerMask enemyLayers;
@@ -48,7 +52,11 @@ public class AvatarController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Attack();
+            if (Time.time >= nextAttackTime)
+            {
+                Attack();
+            }
+
         }
     }
 
@@ -62,16 +70,19 @@ public class AvatarController : MonoBehaviour
         {
             enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).4);
         }
+        nextAttackTime = Time.time + (1f / attackRate);
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-
+            
             animator.SetTrigger("Punch2");
 
             foreach (Collider2D enemy in hitEnemies)
             {
                 enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).6);
             }
+
+            nextAttackTime = Time.time + (2f / attackRate);
         }
     }
 

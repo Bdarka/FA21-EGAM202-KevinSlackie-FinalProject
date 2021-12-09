@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SlimeScript : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class SlimeScript : MonoBehaviour
 
     int rollAdjective;
     public Adjective adjective;
+    public GameObject EnemyName;
+    
 
     public GameObject Player;
     public Transform playerPosition;
+    public Transform castPoint;
+    public float distToPlayer;
     public float aggroRange;
 
     Rigidbody2D rb2d;
@@ -82,16 +87,16 @@ public class SlimeScript : MonoBehaviour
                 hitPoints -= 20;
                 break;
         }
+        
+        EnemyName.GetComponent<TextMesh>().text = (adjective + " Slime");
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        distToPlayer = Vector2.Distance(transform.position, playerPosition.position);
 
-        //distance from player 
-        float distToPlayer = Vector2.Distance(transform.position, playerPosition.position);
-        
-        
         switch (adjective)
         {
             case Adjective.Strong:
@@ -146,6 +151,21 @@ public class SlimeScript : MonoBehaviour
 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        Destroy(this.gameObject);
+    }
+
+    void CanSeePlayer(float distance)
+    {
+        float castDist = distance;
+
+        Vector2 endPos = castPoint.position + Vector3.right * distance;
+
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, 1 << LayerMask.NameToLayer("Player"));
+        
+        if(hit.collider != null)
+        {
+            
+        }
     }
 
 

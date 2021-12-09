@@ -5,21 +5,22 @@ using UnityEngine;
 public class AvatarController : MonoBehaviour
 {
     public int hitPoints;
-    public int maxHitPoints = 100;
+    public int maxHitPoints;
     public HealthBarScript healthBar;
     
     public int superMeter;
     public int attack, defense, speed;
-    
+    public int damageDealt;
+    public int punchNo;
     
     Rigidbody2D rb2D;
     public bool isGrounded = true;
 
     public Transform hitBox;
     public float attackRange = .5f;
-
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+    float punchTime = 2f;
 
     public Animator animator;
 
@@ -31,6 +32,7 @@ public class AvatarController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
+        punchNo = 1;
         hitPoints = maxHitPoints;
         healthBar.SetMaxHealth(maxHitPoints);
     }
@@ -60,37 +62,88 @@ public class AvatarController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
-            if (Time.time >= nextAttackTime)
-            {
+            //if (Time.time >= nextAttackTime || punchNo > 1) 
+          //  {
                 Attack();
-            }
+           // }
 
         }
     }
 
     void Attack()
     {
-        animator.SetTrigger("Punch1");
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
-
-        foreach(Collider2D enemy in hitEnemies)
+        switch (punchNo)
         {
-            enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).4);
-        }
-        nextAttackTime = Time.time + (1f / attackRate);
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            
-            animator.SetTrigger("Punch2");
+            case (1):
+                {
+                    Debug.Log("We Got to Punch1");
 
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<SlimeScript>().TakeDamage(attack * (int).6);
-            }
+                    animator.SetTrigger("Punch1");
 
-            nextAttackTime = Time.time + (2f / attackRate);
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
+
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        damageDealt = (int)(attack * .4f);
+                        enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
+                    }
+
+                    punchNo = 2;
+                    break;
+                }
+
+            case (2):
+                {
+                    animator.SetTrigger("Punch2");
+
+                    Debug.Log("We Got to Punch2");
+
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
+
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        damageDealt = (int)(attack * .6f);
+                        enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
+                    }
+                    punchNo = 3;
+                    break;
+                }
+
+            case (3):
+                {
+                    animator.SetTrigger("Punch3");
+
+                    Debug.Log("We Got to Punch3");
+
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
+
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        damageDealt = (int)(attack * .8f);
+                        enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
+                    }
+                    punchNo = 4;
+                    break;
+                }
+
+            case (4):
+                {
+                    animator.SetTrigger("Punch4");
+
+                    Debug.Log("We Got to Punch4");
+
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitBox.position, attackRange, enemyLayers);
+
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        damageDealt = attack;
+                        enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
+                    }
+                    punchNo = 1;
+                    break;
+                }
         }
     }
 

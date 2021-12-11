@@ -8,18 +8,19 @@ public class SlimeScript : MonoBehaviour
     public int maxhealth = 100;
     public HealthBarScript healthBar;
 
-    public int attack, defense, hitPoints, speed;
-    public int timeOfAttack;
+    public int attack, defense, hitPoints;
+    public float speed;
+    public int timeOfAttackEnd;
     public int attackLength;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
 
-    public enum Decide { Idle, Attack, ContinueAttack, BulkUp, RunAway, Sleep, Rage}
+    public enum State { Deciding, Idle, StartAttack, ContinueAttack, Advance, BulkUp, BulkUpRecovery, RunAway, Sleep, Rage}
 
-    public Decide currentState;
+    public State currentState;
 
     int rollAdjective;
     public Adjective adjective;
-    public GameObject EnemyName;
+    public TextMeshPro EnemyName;
     
 
     public GameObject Player;
@@ -41,9 +42,9 @@ public class SlimeScript : MonoBehaviour
         attack = 10;
         defense = 10;
         rb2d = GetComponent<Rigidbody2D>();
+        /*
 
-
-        rollAdjective = Random.Range(1, 4);
+        rollAdjective = Random.Range(1, 5);
 
         if (rollAdjective == 1)
         {
@@ -61,6 +62,9 @@ public class SlimeScript : MonoBehaviour
         {
             adjective = Adjective.Relaxed;
         }
+        */
+
+        adjective = Adjective.Strong;
 
         animator = GetComponent<Animator>();
 
@@ -87,8 +91,9 @@ public class SlimeScript : MonoBehaviour
                 hitPoints -= 20;
                 break;
         }
-        
-        EnemyName.GetComponent<TextMesh>().text = (adjective + " Slime");
+
+        EnemyName.GetComponent<TextMesh>();
+        EnemyName.text = adjective + " Slime";
 
     }
 
@@ -125,12 +130,37 @@ public class SlimeScript : MonoBehaviour
         }
     }
 
-    void Attack()
+    void StartAttack()
     {
         animator.SetTrigger("Attack");
 
-        timeOfAttack = (int)Time.time + attackLength;
-        currentState = Decide.ContinueAttack;
+        Debug.Log("StartAttack");
+
+        timeOfAttackEnd = (int)Time.time + attackLength;
+        currentState = State.ContinueAttack;
+    }
+
+    void ContinueAttack()
+    {
+        Debug.Log("ContinueAttack");
+
+        if (timeOfAttackEnd > Time.time)
+        {
+
+        }
+
+        else
+        {
+            currentState = State.Deciding;
+        }
+    }
+
+    void Advance()
+    {
+        Debug.Log("Advance");
+
+        transform.position += Vector3.left * Time.deltaTime * speed;
+        currentState = State.Deciding;
     }
 
     public void TakeDamage(int damage)
@@ -173,24 +203,53 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case Decide.Idle:
+            case State.Deciding:
                 {
+                    Debug.Log("Decide");
+
+                    if (Random.value < (.15f * Time.deltaTime))
+                    {
+                        currentState = State.BulkUp;
+                    }
+
+                    else if(distToPlayer < 2)
+                    {
+                        currentState = State.StartAttack;
+                    }
+                    else
+                    {
+                        currentState = State.Advance;
+                    }
+
+                    break;
+                }
+            
+            case State.Advance:
+                {
+                    Advance();
                     break;
                 }
 
-            case Decide.Attack:
+            case State.StartAttack:
                 {
-                    Attack();
+                    StartAttack();
                     break;
                 }
 
-            case Decide.ContinueAttack:
+            case State.ContinueAttack:
                 {
-                    Attack();
+                    ContinueAttack();
                     break;
                 }
 
-            case Decide.BulkUp:
+            case State.BulkUp:
+                {
+                    Debug.Log("Bulk Up");
+                    currentState = State.Deciding;
+                    break;
+                }
+
+            case State.BulkUpRecovery:
                 {
                     break;
                 }
@@ -201,23 +260,23 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case Decide.Idle:
+            case State.Idle:
                 {
                     break;
                 }
 
-            case Decide.Attack:
+            case State.StartAttack:
                 {
-                    Attack();
+                    StartAttack();
                     break;
                 }
 
-            case Decide.ContinueAttack:
+            case State.ContinueAttack:
                 {
                     break;
                 }
 
-            case Decide.Rage:
+            case State.Rage:
                 {
                     break;
                 }
@@ -228,23 +287,23 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case Decide.Idle:
+            case State.Idle:
                 {
                     break;
                 }
 
-            case Decide.Attack:
+            case State.StartAttack:
                 {
-                    Attack();
+                    StartAttack();
                     break;
                 }
 
-            case Decide.ContinueAttack:
+            case State.ContinueAttack:
                 {
                     break;
                 }
 
-            case Decide.RunAway:
+            case State.RunAway:
                 {
                     break;
                 }
@@ -255,37 +314,26 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case Decide.Idle:
+            case State.Idle:
                 {
                     break;
                 }
 
-            case Decide.Attack:
+            case State.StartAttack:
                 {
-                    Attack();
+                    StartAttack();
                     break;
                 }
 
-            case Decide.ContinueAttack:
+            case State.ContinueAttack:
                 {
                     break;
                 }
 
-            case Decide.Sleep:
+            case State.Sleep:
                 {
                     break;
                 }
-        }
-
-
-
-        if (Time.time < timeOfAttack)
-        {
-
-        }
-        else
-        {
-            currentState = Decide.Idle;
         }
     }
 }

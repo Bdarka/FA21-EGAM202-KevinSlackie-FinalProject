@@ -967,7 +967,7 @@ MonoBehaviour:
   hitPoints: 0
   speed: 2
   timeOfAttackEnd: 0
-  attackLength: 0
+  attackLength: 5
   currentState: 0
   adjective: 0
   EnemyName: {fileID: 476000367}

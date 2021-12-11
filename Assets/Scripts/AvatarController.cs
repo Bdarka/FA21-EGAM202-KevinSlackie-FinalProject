@@ -149,8 +149,27 @@ public class AvatarController : MonoBehaviour
 
     public void PlayerDamaged(int damage)
     {
+        Debug.Log("We Took Damage");
         hitPoints -= (damage - defense);
         healthBar.SetHealth(hitPoints);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Felt Collision");
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Touched by an Enemy");
+
+            if (collision.gameObject.GetComponent<SlimeScript>().currentState == SlimeScript.State.StartAttack)
+            {
+                Debug.Log("The Slime hit us");
+
+                PlayerDamaged(collision.gameObject.GetComponent<SlimeScript>().attack);
+            }
+        }
+
     }
 
 

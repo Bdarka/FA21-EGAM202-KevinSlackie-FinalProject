@@ -134,7 +134,9 @@ public class SlimeScript : MonoBehaviour
     {
         animator.SetTrigger("Attack");
 
-        Debug.Log("StartAttack");
+ 
+
+
 
         timeOfAttackEnd = (int)Time.time + attackLength;
         currentState = State.ContinueAttack;
@@ -142,7 +144,6 @@ public class SlimeScript : MonoBehaviour
 
     void ContinueAttack()
     {
-        Debug.Log("ContinueAttack");
 
         if (timeOfAttackEnd > Time.time)
         {
@@ -151,14 +152,13 @@ public class SlimeScript : MonoBehaviour
 
         else
         {
+            timeOfAttackEnd = 0;
             currentState = State.Deciding;
         }
     }
 
     void Advance()
-    {
-        Debug.Log("Advance");
-
+    { 
         transform.position += Vector3.left * Time.deltaTime * speed;
         currentState = State.Deciding;
     }
@@ -207,7 +207,7 @@ public class SlimeScript : MonoBehaviour
                 {
                     Debug.Log("Decide");
 
-                    if (Random.value < (.15f * Time.deltaTime))
+                    if (Random.value < (1f * Time.deltaTime))
                     {
                         currentState = State.BulkUp;
                     }

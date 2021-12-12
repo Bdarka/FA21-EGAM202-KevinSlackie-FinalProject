@@ -68,6 +68,11 @@ public class AvatarController : MonoBehaviour
            // }
 
         }
+
+        if(punchTime < Time.time)
+        {
+            punchNo = 1;
+        }
     }
 
     void Attack()
@@ -89,6 +94,7 @@ public class AvatarController : MonoBehaviour
                         damageDealt = (int)(attack * .4f);
                         enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
                     }
+                    punchTime = Time.time + 5;
 
                     punchNo = 2;
                     break;
@@ -107,6 +113,8 @@ public class AvatarController : MonoBehaviour
                         damageDealt = (int)(attack * .6f);
                         enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
                     }
+
+                    punchTime = Time.time + 5;
                     punchNo = 3;
                     break;
                 }
@@ -124,6 +132,7 @@ public class AvatarController : MonoBehaviour
                         damageDealt = (int)(attack * .8f);
                         enemy.GetComponent<SlimeScript>().TakeDamage(damageDealt);
                     }
+                    punchTime = Time.time + 5;
                     punchNo = 4;
                     break;
                 }
@@ -158,7 +167,7 @@ public class AvatarController : MonoBehaviour
     {
         Debug.Log("Felt Collision");
 
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "EnemyAttack")
         {
             Debug.Log("Touched by an Enemy");
 

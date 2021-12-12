@@ -10,11 +10,26 @@ public class SlimeScript : MonoBehaviour
 
     public int attack, defense, hitPoints;
     public float speed;
+    
     public int timeOfAttackEnd;
     public int attackLength;
+    
+    public int bulkUpRecovery;
+    public int bulkUpEnd;
+    public int bulkEffectEnd;
+
+    public int rageRecovery;
+    public int rageUp;
+    public int rageEffectEnd;
+    public int rageAnimationEnd;
+
+    public int sleepRecovery;
+    public int sleepEnd;
+
+    public int deathAnimationEnd;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
 
-    public enum State { Deciding, Idle, StartAttack, ContinueAttack, Advance, BulkUp, BulkUpRecovery, RunAway, Sleep, Rage}
+    public enum State { Deciding, Idle, StartAttack, ContinueAttack, Advance, BulkUp, RunAway, Sleep, Rage}
 
     public State currentState;
 
@@ -42,7 +57,7 @@ public class SlimeScript : MonoBehaviour
         attack = 10;
         defense = 10;
         rb2d = GetComponent<Rigidbody2D>();
-        /*
+        
 
         rollAdjective = Random.Range(1, 5);
 
@@ -62,9 +77,9 @@ public class SlimeScript : MonoBehaviour
         {
             adjective = Adjective.Relaxed;
         }
-        */
-
-        adjective = Adjective.Strong;
+        
+        //Line for debugging different actions
+        //adjective = Adjective. ;
 
         animator = GetComponent<Animator>();
 
@@ -94,6 +109,8 @@ public class SlimeScript : MonoBehaviour
 
         EnemyName.GetComponent<TextMesh>();
         EnemyName.text = adjective + " Slime";
+
+        bulkEffectEnd = 0;
 
     }
 
@@ -134,10 +151,6 @@ public class SlimeScript : MonoBehaviour
     {
         animator.SetTrigger("Attack");
 
- 
-
-
-
         timeOfAttackEnd = (int)Time.time + attackLength;
         currentState = State.ContinueAttack;
     }
@@ -166,7 +179,7 @@ public class SlimeScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         animator.SetTrigger("Hit");
-        hitPoints -= (damage - defense);
+        hitPoints -= (damage * damage / (damage + defense));
         healthBar.SetHealth(hitPoints);
 
        if(hitPoints <= 0)
@@ -179,25 +192,13 @@ public class SlimeScript : MonoBehaviour
     {
         animator.SetBool("Dead", true);
 
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-        Destroy(this.gameObject);
-    }
-
-    void CanSeePlayer(float distance)
-    {
-        float castDist = distance;
-
-        Vector2 endPos = castPoint.position + Vector3.right * distance;
-
-        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, 1 << LayerMask.NameToLayer("Player"));
-        
-        if(hit.collider != null)
+        if (deathAnimationEnd > Time.time)
         {
-            
+            GetComponent<Collider2D>().enabled = false;
+            this.enabled = false;
+            Destroy(this.gameObject);
         }
     }
-
 
     void Strong()
     {
@@ -245,12 +246,26 @@ public class SlimeScript : MonoBehaviour
             case State.BulkUp:
                 {
                     Debug.Log("Bulk Up");
-                    currentState = State.Deciding;
-                    break;
-                }
 
-            case State.BulkUpRecovery:
-                {
+                    if(bulkEffectEnd == 0)
+                    { 
+                        defense += 5;
+
+                        bulkUpEnd = (int)Time.time + bulkUpRecovery;
+                        bulkEffectEnd = (int)Time.time + 20;
+                    }
+
+
+                    if (bulkUpEnd > Time.time)
+                    {
+
+                    }
+                    else
+                    {
+                        bulkUpEnd = 0;
+                        currentState = State.Deciding;
+                    }
+
                     break;
                 }
         }
@@ -260,10 +275,36 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case State.Idle:
+            case State.Deciding:
                 {
+                    if (Random.value < (1f * Time.deltaTime))
+                    {
+                        currentState = State.Rage;
+                    }
+                    else if(distToPlayer < 2)
+                    {
+                        currentState = State.StartAttack;
+                    }
+                    else if(rageEffectEnd > Time.time)
+                    {
+                        attack -= 5;
+                        currentState = State.Deciding;
+                    }
+
+                    else
+                    {
+                        currentState = State.Advance;
+                    }
+
                     break;
                 }
+
+            case State.Advance:
+                {
+                    Advance();
+                    break;
+                }
+
 
             case State.StartAttack:
                 {
@@ -278,6 +319,25 @@ public class SlimeScript : MonoBehaviour
 
             case State.Rage:
                 {
+                    animator.SetTrigger("Rage");
+
+                    hitPoints -= 10;
+                    attack += 5;
+
+                    rageUp = (int)Time.time * rageEffectEnd;
+
+                    rageAnimationEnd = (int)Time.time * rageRecovery;
+
+                    if(rageAnimationEnd > Time.time)
+                    {
+
+                    }
+
+                    else
+                    {
+                        currentState = State.Deciding;
+                    }
+
                     break;
                 }
         }
@@ -287,10 +347,30 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case State.Idle:
+            case State.Deciding:
                 {
+                    if (Random.value < (1f * Time.deltaTime))
+                    {
+                        currentState = State.RunAway;
+                    }
+                    else if (distToPlayer < 2)
+                    {
+                        currentState = State.StartAttack;
+                    }
+                    else
+                    {
+                        currentState = State.Advance;
+                    }
+
                     break;
                 }
+
+            case State.Advance:
+                {
+                    Advance();
+                    break;
+                }
+
 
             case State.StartAttack:
                 {
@@ -305,6 +385,9 @@ public class SlimeScript : MonoBehaviour
 
             case State.RunAway:
                 {
+                    transform.position += Vector3.right * speed;
+
+                    currentState = State.Deciding;
                     break;
                 }
         }
@@ -314,10 +397,29 @@ public class SlimeScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case State.Idle:
+            case State.Deciding:
                 {
+                    if (Random.value < (1f * Time.deltaTime))
+                    {
+                        currentState = State.Sleep;
+                    }
+                    else if (distToPlayer < 2)
+                    {
+                        currentState = State.StartAttack;
+                    }
+                    else
+                    {
+                        currentState = State.Advance;
+                    }
+
                     break;
                 }
+
+            case State.Advance:
+            {
+                    Advance();
+                    break;
+            }
 
             case State.StartAttack:
                 {
@@ -332,6 +434,21 @@ public class SlimeScript : MonoBehaviour
 
             case State.Sleep:
                 {
+                    animator.SetTrigger("Sleep");
+
+                    sleepEnd = (int)Time.time * sleepRecovery;
+
+                    if(sleepEnd > Time.time)
+                    {
+
+                    }
+                    else
+                    {
+                        sleepEnd = 0;
+                        currentState = State.Deciding;
+                    }
+
+
                     break;
                 }
         }

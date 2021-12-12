@@ -462,7 +462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282896999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.68, y: -1.681, z: -0.5141727}
+  m_LocalPosition: {x: -4.68, y: -1.681, z: 0}
   m_LocalScale: {x: 7.6017, y: 7.2189, z: 1}
   m_Children:
   - {fileID: 1451398109}
@@ -485,8 +485,8 @@ MonoBehaviour:
   maxHitPoints: 100
   healthBar: {fileID: 1254736859}
   superMeter: 0
-  attack: 5
-  defense: 3
+  attack: 20
+  defense: 5
   speed: 2
   damageDealt: 0
   punchNo: 0
@@ -551,7 +551,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282896999}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -963,11 +963,20 @@ MonoBehaviour:
   maxhealth: 100
   healthBar: {fileID: 1614947768}
   attack: 0
-  defense: 2
+  defense: 0
   hitPoints: 0
   speed: 2
   timeOfAttackEnd: 0
   attackLength: 5
+  bulkUpRecovery: 5
+  bulkUpEnd: 0
+  rageRecovery: 5
+  rageUp: 0
+  rageEffectEnd: 0
+  rageAnimationEnd: 5
+  sleepRecovery: 5
+  sleepEnd: 0
+  deathAnimationEnd: 5
   currentState: 0
   adjective: 0
   EnemyName: {fileID: 476000367}
@@ -1041,6 +1050,7 @@ Transform:
   m_Children:
   - {fileID: 1802453437}
   - {fileID: 1183385248}
+  - {fileID: 1764360863}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1491,7 +1501,7 @@ GameObject:
   - component: {fileID: 1092801961}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2205,7 +2215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 275, y: 180.5}
+  m_AnchoredPosition: {x: 247, y: 181}
   m_SizeDelta: {x: 388.9764, y: 69.858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614947768
@@ -2403,6 +2413,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1764360862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764360863}
+  m_Layer: 7
+  m_Name: EnemyAttack
+  m_TagString: EnemyAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1764360863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764360862}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4299998, y: 1.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 569383745}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1772667595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1802453437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slime_CastPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -2536,7 +2576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802453436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7845958, y: -0.81563556, z: -585.9167}
+  m_LocalPosition: {x: -1.7845958, y: -0.81563556, z: 0}
   m_LocalScale: {x: 3.1308703, y: 3.0778701, z: 1}
   m_Children: []
   m_Father: {fileID: 569383745}

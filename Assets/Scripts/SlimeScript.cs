@@ -22,6 +22,7 @@ public class SlimeScript : MonoBehaviour
     public int rageUp;
     public int rageEffectEnd;
     public int rageAnimationEnd;
+    public bool rageUsed;
 
     public int sleepRecovery;
     public int sleepEnd;
@@ -256,7 +257,7 @@ public class SlimeScript : MonoBehaviour
                     }
 
 
-                    if (bulkUpEnd > Time.time)
+                    if (bulkUpEnd < Time.time)
                     {
 
                     }
@@ -314,30 +315,39 @@ public class SlimeScript : MonoBehaviour
 
             case State.ContinueAttack:
                 {
+                    ContinueAttack();
                     break;
                 }
 
             case State.Rage:
                 {
-                    animator.SetTrigger("Rage");
-
-                    hitPoints -= 10;
-                    attack += 5;
-
-                    rageUp = (int)Time.time * rageEffectEnd;
-
-                    rageAnimationEnd = (int)Time.time * rageRecovery;
-
-                    if(rageAnimationEnd > Time.time)
+                    if(rageEffectEnd > Time.time)
                     {
-
+                        rageUsed = false;
                     }
 
-                    else
+                    if (rageUsed == false)
                     {
-                        currentState = State.Deciding;
-                    }
+                        animator.SetTrigger("Rage");
 
+                        hitPoints -= 10;
+                        attack += 5;
+
+                        rageUp = (int)Time.time * rageEffectEnd;
+
+                        rageAnimationEnd = (int)Time.time * rageRecovery;
+
+                        if (rageAnimationEnd < Time.time)
+                        {
+
+                        }
+
+                        else
+                        {
+                            rageUsed = true;
+                            currentState = State.Deciding;
+                        }
+                    }
                     break;
                 }
         }
@@ -380,6 +390,7 @@ public class SlimeScript : MonoBehaviour
 
             case State.ContinueAttack:
                 {
+                    ContinueAttack();
                     break;
                 }
 

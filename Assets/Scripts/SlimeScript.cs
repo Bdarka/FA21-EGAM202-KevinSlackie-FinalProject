@@ -17,6 +17,7 @@ public class SlimeScript : MonoBehaviour
     public int bulkUpRecovery;
     public int bulkUpEnd;
     public int bulkEffectEnd;
+    public bool bulkUpUsed;
 
     public int rageRecovery;
     public int rageUp;
@@ -25,12 +26,14 @@ public class SlimeScript : MonoBehaviour
     public bool rageUsed;
 
     public int sleepRecovery;
+    public int sleepUp;
     public int sleepEnd;
+    public bool sleepUsed;
 
-    public int deathAnimationEnd;
+    public float deathAnimationEnd;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
 
-    public enum State { Deciding, Idle, StartAttack, ContinueAttack, Advance, BulkUp, RunAway, Sleep, Rage}
+    public enum State { Deciding, Idle, StartAttack, ContinueAttack, Advance, BulkUp, RunAway, Sleep, Rage, Dead}
 
     public State currentState;
 
@@ -78,9 +81,9 @@ public class SlimeScript : MonoBehaviour
         {
             adjective = Adjective.Relaxed;
         }
-        
+
         //Line for debugging different actions
-        //adjective = Adjective. ;
+       // adjective = Adjective.Meek;
 
         animator = GetComponent<Animator>();
 
@@ -110,9 +113,6 @@ public class SlimeScript : MonoBehaviour
 
         EnemyName.GetComponent<TextMesh>();
         EnemyName.text = adjective + " Slime";
-
-        bulkEffectEnd = 0;
-
     }
 
     // Update is called once per frame
@@ -159,7 +159,7 @@ public class SlimeScript : MonoBehaviour
     void ContinueAttack()
     {
 
-        if (timeOfAttackEnd > Time.time)
+        if (timeOfAttackEnd < Time.time)
         {
 
         }
@@ -185,20 +185,17 @@ public class SlimeScript : MonoBehaviour
 
        if(hitPoints <= 0)
         {
-            Die();
+            animator.SetTrigger("Dead");
+            Invoke("Die", 3f);
         }
     }
 
     void Die()
     {
-        animator.SetBool("Dead", true);
+        currentState = State.Dead;
+        GetComponent<Collider2D>().enabled = false;
 
-        if (deathAnimationEnd > Time.time)
-        {
-            GetComponent<Collider2D>().enabled = false;
-            this.enabled = false;
-            Destroy(this.gameObject);
-        }
+        this.gameObject.SetActive (false);
     }
 
     void Strong()
@@ -246,25 +243,9 @@ public class SlimeScript : MonoBehaviour
 
             case State.BulkUp:
                 {
-                    Debug.Log("Bulk Up");
-
-                    if(bulkEffectEnd == 0)
-                    { 
-                        defense += 5;
-
-                        bulkUpEnd = (int)Time.time + bulkUpRecovery;
-                        bulkEffectEnd = (int)Time.time + 20;
-                    }
-
-
-                    if (bulkUpEnd < Time.time)
+                    if(bulkUpUsed == false)
                     {
 
-                    }
-                    else
-                    {
-                        bulkUpEnd = 0;
-                        currentState = State.Deciding;
                     }
 
                     break;
@@ -272,24 +253,32 @@ public class SlimeScript : MonoBehaviour
         }
     }
 
+    IEnumerator BulkTime(int rageAnimationEnd)
+    {
+        animator.SetTrigger("Bulk");
+        bulkUpUsed = true;
+        defense += 2;
+
+        yield return new WaitForSeconds(bulkUpEnd);
+
+        currentState = State.Deciding;
+        bulkUpUsed = false;
+    }
+
+
     void Angry()
     {
         switch (currentState)
         {
             case State.Deciding:
                 {
-                    if (Random.value < (1f * Time.deltaTime))
+                    if (Random.value < (1f * Time.deltaTime) && rageUp < Time.time)
                     {
                         currentState = State.Rage;
                     }
                     else if(distToPlayer < 2)
                     {
                         currentState = State.StartAttack;
-                    }
-                    else if(rageEffectEnd > Time.time)
-                    {
-                        attack -= 5;
-                        currentState = State.Deciding;
                     }
 
                     else
@@ -321,37 +310,33 @@ public class SlimeScript : MonoBehaviour
 
             case State.Rage:
                 {
-                    if(rageEffectEnd > Time.time)
-                    {
-                        rageUsed = false;
-                    }
-
                     if (rageUsed == false)
                     {
-                        animator.SetTrigger("Rage");
-
-                        hitPoints -= 10;
-                        attack += 5;
-
-                        rageUp = (int)Time.time * rageEffectEnd;
-
-                        rageAnimationEnd = (int)Time.time * rageRecovery;
-
-                        if (rageAnimationEnd < Time.time)
-                        {
-
-                        }
-
-                        else
-                        {
-                            rageUsed = true;
-                            currentState = State.Deciding;
-                        }
+                        StartCoroutine(RageTime(rageAnimationEnd));
                     }
                     break;
                 }
         }
     }
+
+    IEnumerator RageTime(int rageAnimationEnd)
+    {
+        animator.SetTrigger("Rage");
+        rageUsed = true;
+        hitPoints -= 10;
+        attack += 5;
+
+        rageUp = (int)Time.time + rageEffectEnd;
+
+        Debug.Log("We Waited");
+        yield return new WaitForSeconds(rageAnimationEnd);
+        Debug.Log("We Got to after the Wait");
+
+        currentState = State.Deciding;
+        rageUsed = false;
+    }
+
+
 
     void Meek()
     {
@@ -359,7 +344,7 @@ public class SlimeScript : MonoBehaviour
         {
             case State.Deciding:
                 {
-                    if (Random.value < (1f * Time.deltaTime))
+                    if (Random.value < (1f * Time.deltaTime) && transform.position.x < 6.5f)
                     {
                         currentState = State.RunAway;
                     }
@@ -445,23 +430,28 @@ public class SlimeScript : MonoBehaviour
 
             case State.Sleep:
                 {
-                    animator.SetTrigger("Sleep");
-
-                    sleepEnd = (int)Time.time * sleepRecovery;
-
-                    if(sleepEnd > Time.time)
+                    if(sleepUsed == false)
                     {
-
+                        StartCoroutine(SleepTime(sleepEnd));
                     }
-                    else
-                    {
-                        sleepEnd = 0;
-                        currentState = State.Deciding;
-                    }
-
-
                     break;
                 }
         }
+    }
+
+    IEnumerator SleepTime(int sleepEnd)
+    {
+        animator.SetTrigger("Sleep");
+        sleepUsed = true;
+        hitPoints += 2;
+
+        sleepUp = (int)Time.time + sleepEnd;
+
+        Debug.Log("We Waited");
+        yield return new WaitForSeconds(sleepEnd);
+        Debug.Log("We Got to after the Wait");
+
+        currentState = State.Deciding;
+        sleepUsed = false;
     }
 }

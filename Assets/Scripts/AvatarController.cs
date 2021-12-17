@@ -69,7 +69,12 @@ public class AvatarController : MonoBehaviour
 
         }
 
-        if(punchTime < Time.time)
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if (punchTime < Time.time)
         {
             punchNo = 1;
         }

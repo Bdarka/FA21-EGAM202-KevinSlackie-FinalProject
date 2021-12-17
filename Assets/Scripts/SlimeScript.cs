@@ -30,6 +30,8 @@ public class SlimeScript : MonoBehaviour
     public int sleepEnd;
     public bool sleepUsed;
 
+    public GameObject EndScreen;
+
     public float deathAnimationEnd;
     public enum Adjective { Strong, Angry, Meek, Relaxed }
 
@@ -185,17 +187,20 @@ public class SlimeScript : MonoBehaviour
 
        if(hitPoints <= 0)
         {
+            currentState = State.Dead;
             animator.SetTrigger("Dead");
-            Invoke("Die", 3f);
+            Invoke("Die", 5f);
         }
     }
 
     void Die()
     {
-        currentState = State.Dead;
+
         GetComponent<Collider2D>().enabled = false;
 
         this.gameObject.SetActive (false);
+
+        EndScreen.SetActive(true);
     }
 
     void Strong()
@@ -250,6 +255,11 @@ public class SlimeScript : MonoBehaviour
 
                     break;
                 }
+            case State.Dead:
+                {
+                    break;
+                }
+
         }
     }
 
@@ -314,6 +324,11 @@ public class SlimeScript : MonoBehaviour
                     {
                         StartCoroutine(RageTime(rageAnimationEnd));
                     }
+                    break;
+                }
+
+            case State.Dead:
+                {
                     break;
                 }
         }
@@ -386,6 +401,11 @@ public class SlimeScript : MonoBehaviour
                     currentState = State.Deciding;
                     break;
                 }
+
+            case State.Dead:
+                {
+                    break;
+                }
         }
     }
 
@@ -425,6 +445,7 @@ public class SlimeScript : MonoBehaviour
 
             case State.ContinueAttack:
                 {
+                    ContinueAttack();
                     break;
                 }
 
@@ -434,6 +455,11 @@ public class SlimeScript : MonoBehaviour
                     {
                         StartCoroutine(SleepTime(sleepEnd));
                     }
+                    break;
+                }
+
+            case State.Dead:
+                {
                     break;
                 }
         }

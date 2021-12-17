@@ -30,6 +30,12 @@ public class SlimeScript : MonoBehaviour
     public int sleepEnd;
     public bool sleepUsed;
 
+    public GameObject Protein;
+    public GameObject Pete;
+    public GameObject Sweat;
+    public GameObject Mask;
+
+
     public GameObject EndScreen;
 
     public float deathAnimationEnd;
@@ -95,21 +101,25 @@ public class SlimeScript : MonoBehaviour
                 attack += 5;
                 defense += 5;
                 hitPoints += 20;
+                Protein.SetActive(true);
                 break;
 
             case Adjective.Angry:
                 attack += 10;
                 defense -= 5;
+                Pete.SetActive(true);
                 break;
 
             case Adjective.Meek:
                 attack -= 5;
                 defense -= 10;
                 hitPoints -= 20;
+                Sweat.SetActive(true);
                 break;
 
             case Adjective.Relaxed:
                 hitPoints -= 20;
+                Mask.SetActive(true);
                 break;
         }
 

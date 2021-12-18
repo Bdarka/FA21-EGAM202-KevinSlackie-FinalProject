@@ -24,6 +24,8 @@ public class AvatarController : MonoBehaviour
 
     public Animator animator;
 
+    public GameObject GameOverScreen;
+
     public LayerMask enemyLayers;
 
     // Start is called before the first frame update
@@ -166,6 +168,18 @@ public class AvatarController : MonoBehaviour
         Debug.Log("We Took Damage");
         hitPoints -= (damage * damage / (damage + defense));
         healthBar.SetHealth(hitPoints);
+
+        if(hitPoints <= 0)
+        {
+           Invoke ("Die", 5f);
+        }
+    }
+
+    public void Die()
+    {
+        this.gameObject.SetActive(false);
+        GameOverScreen.SetActive(true);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

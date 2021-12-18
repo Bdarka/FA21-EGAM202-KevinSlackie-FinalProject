@@ -260,7 +260,7 @@ public class SlimeScript : MonoBehaviour
                 {
                     if(bulkUpUsed == false)
                     {
-
+                        StartCoroutine(BulkTime(bulkEffectEnd));
                     }
 
                     break;
@@ -273,7 +273,7 @@ public class SlimeScript : MonoBehaviour
         }
     }
 
-    IEnumerator BulkTime(int rageAnimationEnd)
+    IEnumerator BulkTime(int bulkUpEnd)
     {
         animator.SetTrigger("Bulk");
         bulkUpUsed = true;
@@ -479,7 +479,7 @@ public class SlimeScript : MonoBehaviour
     {
         animator.SetTrigger("Sleep");
         sleepUsed = true;
-        hitPoints += 2;
+        hitPoints += 5;
 
         sleepUp = (int)Time.time + sleepEnd;
 
